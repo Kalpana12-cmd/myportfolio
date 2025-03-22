@@ -72,13 +72,19 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
+        <div
+          className={`md:hidden backdrop-blur-sm ${
+            isDarkMode ? "bg-white/95" : "bg-gray-900/95" // Opposite background based on dark mode
+          }`}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {menuItems.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-primary-700 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
+                  isDarkMode ? "text-gray-900" : "text-gray-100" // Opposite text color based on dark mode
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item}

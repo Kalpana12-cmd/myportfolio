@@ -3,20 +3,18 @@ import React from 'react';
 const Skills = () => {
   const skills = [
     { name: 'React', image: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
-    //{ name: 'TypeScript', image: 'https://cdn.worldvectorlogo.com/logos/typescript-2.svg' },
+     
     { name: 'Tailwind CSS', image: 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg' },
-    //{ name: 'Next.js', image: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' },
+    
     { name: 'Node.js', image: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' },
-    { name: 'Express', image: 'https://cdn.worldvectorlogo.com/logos/express-109.svg' },
-    //{ name: 'Python', image: 'https://cdn.worldvectorlogo.com/logos/python-5.svg' },
-   // { name: 'Django', image: 'https://cdn.worldvectorlogo.com/logos/django.svg' },
-    //{ name: 'PostgreSQL', image: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg' },
+    { name: 'Express', image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1675637255386/f3a9a38b-116d-4b35-8f46-8d8abb78166f.png' },
+     
     { name: 'MongoDB', image: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' },
-    //{ name: 'Redis', image: 'https://cdn.worldvectorlogo.com/logos/redis.svg' },
+     
     { name: 'MySQL', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHANf_kx1BhpVPouuRcquqkrEgv_IdVs0coQ&s' },
     { name: 'JavaScript', image: 'https://cdn.worldvectorlogo.com/logos/javascript-1.svg' },
     { name: 'Java', image: 'https://cdn.worldvectorlogo.com/logos/java-4.svg' },
-    //{ name: 'C++', image: 'https://cdn.worldvectorlogo.com/logos/c.svg' },
+     
   ];
 
   return (

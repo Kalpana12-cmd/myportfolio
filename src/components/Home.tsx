@@ -10,7 +10,7 @@ const Home = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <img
-           src ="/image/kalpanaaa.jpg"
+           src ="../images/kalpanaaa.jpg"
              alt="Profile"
              className="w-50 h-64 rounded-lg mx-auto mb-8 border-4 border-white dark:border-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 animate-fade-in"
 />          <h1 className="text-4xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500 mb-4 animate-slide-in">

@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 pl-0 ml-0">
             <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500">
               <img
-                src="/image/poster.jpg"
+                src="../images/poster.jpg"
                 alt="Logo"
                 className="w-20 h-16 rounded-lg object-cover border-2 border-white dark:border-gray-800 shadow-md"
               />

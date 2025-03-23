@@ -1,7 +1,8 @@
 import React from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import posterImage from "../../images/poster.jpg"; // Corrected path: go up two directories to reach /images/
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
@@ -9,8 +10,11 @@ const Navbar = () => {
 
   // Toggle dark mode globally
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark", !isDarkMode);
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      document.documentElement.classList.toggle("dark", newMode);
+      return newMode;
+    });
   };
 
   return (
@@ -20,11 +24,13 @@ const Navbar = () => {
           {/* Logo Container - Aligned to Top-Left Edge */}
           <div className="flex-shrink-0 pl-0 ml-0">
             <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500">
-              <img
-                src="../images/poster.jpg"
-                alt="Logo"
-                className="w-20 h-16 rounded-lg object-cover border-2 border-white dark:border-gray-800 shadow-md"
-              />
+              <a href="#home" aria-label="Go to homepage">
+                <img
+                  src={posterImage}
+                  alt="Gade Kalpana's Logo"
+                  className="w-20 h-16 rounded-lg object-cover border-2 border-white dark:border-gray-800 shadow-md"
+                />
+              </a>
             </h1>
           </div>
 
@@ -43,6 +49,7 @@ const Navbar = () => {
             {/* Dark/Light Mode Toggle Button */}
             <button
               onClick={toggleDarkMode}
+              aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
               className="text-primary-700 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 p-2 rounded-md focus:outline-none transition-colors duration-300"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -54,6 +61,7 @@ const Navbar = () => {
             {/* Dark/Light Mode Toggle Button */}
             <button
               onClick={toggleDarkMode}
+              aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
               className="text-primary-700 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 p-2 rounded-md focus:outline-none transition-colors duration-300"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -62,6 +70,7 @@ const Navbar = () => {
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
               className="inline-flex items-center justify-center p-2 rounded-md text-primary-700 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 focus:outline-none transition-colors duration-300"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,7 +83,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           className={`md:hidden backdrop-blur-sm ${
-            isDarkMode ? "bg-white/95" : "bg-gray-900/95" // Opposite background based on dark mode
+            isDarkMode ? "bg-white/95" : "bg-gray-900/95"
           }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -83,7 +92,7 @@ const Navbar = () => {
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
-                  isDarkMode ? "text-gray-900" : "text-gray-100" // Opposite text color based on dark mode
+                  isDarkMode ? "text-gray-900" : "text-gray-100"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

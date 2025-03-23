@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "../../images/kalpanaaa.jpg";
+import profileImage from "../../images/kalpana.jpg";
 const Home = () => {
   return (
     <section

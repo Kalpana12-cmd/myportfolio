@@ -9,7 +9,7 @@ const Projects = () => {
       image: 'https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/960x0.jpg?format=jpg&width=1440',
       technologies: ['Html', 'Css', 'Javascript'],
       github: 'https://github.com/Kalpana12-cmd/Todo-List.git',
-      demo: '#',
+      demo: 'http://todo-list-site-12.netlify.app',
     },
     {
       title: 'Rock Paper Scissors',
@@ -17,15 +17,15 @@ const Projects = () => {
       image: 'https://www.wikihow.com/images/thumb/e/ec/Play-Rock%2C-Paper%2C-Scissors-Step-4-Version-5.jpg/550px-nowatermark-Play-Rock%2C-Paper%2C-Scissors-Step-4-Version-5.jpg',
       technologies: ['Html',  'Tailwind CSS','Javascript'],
       github: 'https://github.com/Kalpana12-cmd/Rock-Paper-Scissors.git',
-      demo: '#',
+      demo: 'http://rock-paper-scissors-game-site-12.netlify.app',
     },
     {
       title: 'Amazon',
-      description: 'Conducted data analysis and implemented machine learning models to drive actionable insights, improving decision-making and operational efficiency',
+      description: 'Developed a amazon website to help users manage their shopping.',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlHgTjBKOBGeYAo5Hp69mE6hUZgdiqhz23jXQjAAOYmlXuQSV7oOAxheTcAaJHAX4hmw&usqp=CAU',
       technologies: ['React', 'Html', 'Tailwind css'],
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/Kalpana12-cmd/Rock-Paper-Scissors.git',
+      demo: 'http://amazon-wedsite.netlify.app',
     },
   ];
 

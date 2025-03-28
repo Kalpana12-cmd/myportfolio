@@ -1,6 +1,7 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "../../images/kalpana.jpg";
+import { Github, Linkedin, Mail, Code } from "lucide-react";
+import profileImage from "../../images/myphoto.jpg";
+
 const Home = () => {
   return (
     <section
@@ -12,7 +13,7 @@ const Home = () => {
           <img
             src={profileImage}
             alt="Gade Kalpana's Profile"
-            className="w-64 h-64 rounded-lg mx-auto mb-8 border-4 border-white dark:border-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 animate-fade-in"
+            className="w-45 h-80 rounded-lg mx-auto mb-8 border-4 border-white dark:border-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 animate-fade-in"
           />
           <h1 className="text-4xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500 mb-4 animate-slide-in">
             Gade Kalpana
@@ -49,6 +50,33 @@ const Home = () => {
               className="text-primary-600 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 transition-colors duration-300 transform hover:scale-110"
             >
               <Mail size={24} />
+            </a>
+            <a
+              href="https://leetcode.com/u/FhHXWIehvC/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Gade Kalpana's LeetCode profile"
+              className="text-primary-600 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 transition-colors duration-300 transform hover:scale-110"
+            >
+              <Code size={24} />
+            </a>
+            <a
+              href="https://www.geeksforgeeks.org/user/kalpan7ce0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Gade Kalpana's GeeksforGeeks profile"
+              className="text-primary-600 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 transition-colors duration-300 transform hover:scale-110"
+            >
+              <Code size={24} />
+            </a>
+            <a
+              href="https://www.interviewbit.com/profile/g-kalpana_326/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Gade Kalpana's InterviewBit profile"
+              className="text-primary-600 dark:text-gray-300 hover:text-accent-500 dark:hover:text-accent-500 transition-colors duration-300 transform hover:scale-110"
+            >
+              <Code size={24} />
             </a>
           </div>
         </div>

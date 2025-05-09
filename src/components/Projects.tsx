@@ -23,9 +23,17 @@ const Projects = () => {
       title: 'Amazon',
       description: 'Developed a amazon website to help users manage their shopping.',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlHgTjBKOBGeYAo5Hp69mE6hUZgdiqhz23jXQjAAOYmlXuQSV7oOAxheTcAaJHAX4hmw&usqp=CAU',
-      technologies: ['React', 'Html', 'Tailwind css'],
-      github: 'https://github.com/Kalpana12-cmd/Rock-Paper-Scissors.git',
+      technologies: ['JavaScript', 'Html', 'Tailwind css'],
+      github: 'https://github.com/Kalpana12-cmd/amazon.git',
       demo: 'http://amazon-wedsite.netlify.app',
+    },
+    {
+      title: 'Student Guidance',
+      description: 'Developed a responsive Student Guidance Website using HTML, CSS, and JavaScript to help students choose the right academic and career paths based on their current education level.',
+      image: 'https://img.freepik.com/free-vector/teacher-student-concept-illustration_114360-7935.jpg?t=st=1746807728~exp=1746811328~hmac=8e6b8a84c258aac502e571c5eed6bd2c30f9e85960259e46472c592e1b00265d&w=900',
+      technologies: ['JavaScript', 'Html', 'Tailwind css'],
+      github: 'https://github.com/Kalpana12-cmd/StudentGuide.git',
+      demo: 'http://studentguidence.netlify.app',
     },
   ];
 

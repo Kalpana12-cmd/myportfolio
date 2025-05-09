@@ -13,7 +13,7 @@ const Resume = () => {
     {
       title: 'Blue Prism Internship',
       company: 'AICTE',
-      period: 'July 2024 – September 2024',
+      period: 'August 2024 – September 2024',
       description: 'Gained hands-on experience in designing, developing, and deploying automation workflows using Blue Prism.',
     },
   ];
@@ -33,7 +33,7 @@ const Resume = () => {
   ];
 
   // Direct download link for your resume
-  const resumeFileUrl = 'https://drive.google.com/uc?export=download&id=12dimW_zoqkwVGwuh0dg3AmkAXOc_9ip7';
+  const resumeFileUrl = 'https://drive.google.com/file/d/1eLG95YjPE8L4I3imG3KmfFkdzRca99XI/view?usp=sharing';
 
   return (
     <section id="resume" className="py-20 bg-gradient-to-b from-white to-primary-50 dark:from-gray-900 dark:to-gray-800">
